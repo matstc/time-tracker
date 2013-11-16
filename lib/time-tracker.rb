@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require './pluralize'
+require 'time-tracker/pluralize'
 
 def start time, activity
   `notify-send -t #{time} "Starting work on #{activity}" "#{"minute".pluralize(time)} left"`
@@ -18,12 +18,5 @@ end
 def finish_up activity
   `notify-send "Finish up #{activity}" "Time's up"`
   puts "Time is up"
-  `aplay -q bell.wav`
+  `aplay -q #{File.expand_path(File.dirname(__FILE__))}/time-tracker/bell.wav`
 end
-
-@activity = ARGV[0] || "pomodoro"
-@time = (ARGV[1] || 30).to_i
-
-start @time, @activity
-loop! @time
-finish_up @activity
