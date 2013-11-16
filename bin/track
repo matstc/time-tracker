@@ -2,7 +2,7 @@
 require 'time-tracker'
 
 @activity = ARGV[0] || "pomodoro"
-@time = (ARGV[1] || 30).to_i
+@time = (ARGV[1] || 25).to_i
 
 start @time, @activity
 loop! @time
