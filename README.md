@@ -13,6 +13,6 @@ Specify nothing to start a 25-minute pomodoro:
     $> track
 
 # License Information
-The bell sound recorded by Mike Koenig and was acquired from [here](http://soundbible.com/1599-Store-Door-Chime.html) under a CC–Attribution license.
+The bell sound was recorded by Mike Koenig and was acquired from [soundbible.com](http://soundbible.com/1599-Store-Door-Chime.html) under a CC–Attribution license.
 
 The rest of this software is under a [Creative Commons Attribution-NonCommercial 3.0 Unported License](http://creativecommons.org/licenses/by-nc/3.0/deed.en_US).
